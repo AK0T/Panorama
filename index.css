@@ -1,0 +1,55 @@
+body{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 30px;
+}
+
+header{
+    display: flex;
+    flex-flow: column;
+}
+
+.logo_and_info{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.logo{
+    width: 400px;
+    height: 105px;  
+}
+
+.date{
+    font-size: 15pt;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-bottom: 1px solid black;
+}
+
+.menu_points{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    margin-right: 50px;
+    font-size: 20pt;
+}
+
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+input{
+    width: 200px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
