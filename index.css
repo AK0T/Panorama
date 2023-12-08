@@ -1,3 +1,12 @@
+@font-face {
+    font-family:LetoSans-Thin;
+    src: url(fonts/LetoSans-Thin.ttf);
+}
+@font-face {
+    font-family:Myriad-Pro-reg;
+    src: url(fonts/MYRIADPRO-REGULAR.OTF);
+}
+
 body{
     margin-left: 300px;
     margin-right: 300px;
@@ -22,7 +31,7 @@ header{
 
 .date{
     font-size: 15pt;
-    font-family: url('fonts/MYRIADPRO-REGULAR.OTF');
+    font-family: 'Myriad-Pro-reg';
 }
 
 .menu{
@@ -52,13 +61,17 @@ li{
     list-style-type: none;
     margin-right: 50px;
     font-size: 20pt;
-    font-family: url('fonts/MYRIADPRO-REGULAR.OTF');
+    font-family: 'Myriad-Pro-reg';
 }
 
 
 a{
     text-decoration: none;
     color:black;
+}
+
+a:hover{
+    color:#FF3C3C;
 }
 
 .dropbtn{
@@ -82,6 +95,7 @@ input{
     position: absolute;
     top: 245px;
     right: 300px;
+    background: white;
 }
 
 .extra_menu_item{
@@ -91,18 +105,11 @@ input{
 .archive_content{
     display:none;
     border: 1px solid black;
-    width: 60px;
-    height: 460px;
     position: absolute;
     top: 245px;
     right: 395px;
     padding: 10px;
-}
-
-@font-face {
-    font-family:LetoSans-Thin;
-    src: url(fonts/LetoSans-Thin.ttf);
-
+    background: white;
 }
 
 .archive_content_item{
@@ -113,6 +120,25 @@ input{
 
 .archivebtn{
     cursor: pointer;
+}
+
+.one-part{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.slider-content{
+    border: 1px solid black;
+    width:900px;
+    height:300px;
+}
+
+.qr{
+    width:300px;
+    height:300px;
 }
 
 
