@@ -7,21 +7,84 @@
         <header>
             <div class="logo_and_info">  
                 <div class="date">
-                    <p>Вторник, 07 декабря, 2023</p>
+                    <p id="date_today">Вторник, 07 декабря, 2023</p>
                     <p>Зеленогорск, красноярский край</p>
                 </div>          
                 <img src="img/logo.png" alt="" class="logo">
             </div>
             <div class="menu">
-                <input type="text" placeholder="Поиск">
+                <div class="search">
+                    <img src="img/search.png" alt="" class="search_bt">
+                    <input type="text" placeholder="Поиск">
+                </div>
                 <ul class="menu_points">                
                     <a href="index.html"><li>Главная</li></a>
-                    <a href=""></a><li>Новости</li></a>
-                    <a href=""></a><li>Афиша</li></a>
-                    <a href=""></a><li>О газете</li></a>
-                    <a href=""></a><li>Архив</li></a>
+                    <a href=""><li>Новости</li></a>
+                    <a href=""><li>Афиша</li></a>
+                    <a href=""><li>О газете</li></a>
+                    <li class="archivebtn" onclick="open_archive_menu()">Архив</li>
+                    <img src="img/menu.png" onclick="open_extra_menu()" class="dropbtn">
                 </ul>
+                <div id="extra_menu" class="menu_content">              
+                    <a href="index.html"><li class="extra_menu_item">Новости</li></a>
+                    <a href=""></a><li class="extra_menu_item">Афиша</li></a>
+                    <a href=""></a><li class="extra_menu_item">Фото</li></a>
+                    <a href=""></a><li class="extra_menu_item">Редакция</li></a>
+                    <a href=""></a><li class="extra_menu_item">Архив</li></a>
+                    <a href=""></a><li class="extra_menu_item">О газете</li></a>
+                    <a href=""></a><li class="extra_menu_item">Рекламодателям</li></a>
+                    <a href=""></a><li class="extra_menu_item">Приемная</li></a>
+                    <a href=""></a><li class="extra_menu_item">Где купить</li></a>
             </div>
+            <div id="archive_menu" class="archive_content">
+                <a href=""><li class="archive_content_item">2012</li></a>
+                <a href=""><li class="archive_content_item">2013</li></a>
+                <a href=""><li class="archive_content_item">2014</li></a>
+                <a href=""><li class="archive_content_item">2015</li></a>
+                <a href=""><li class="archive_content_item">2016</li></a>
+                <a href=""><li class="archive_content_item">2017</li></a>
+                <a href=""><li class="archive_content_item">2018</li></a>
+                <a href=""><li class="archive_content_item">2019</li></a>
+                <a href=""><li class="archive_content_item">2020</li></a>
+                <a href=""><li class="archive_content_item">2021</li></a>
+                <a href=""><li class="archive_content_item">2022</li></a>
+                <a href=""><li class="archive_content_item">2023</li></a>
+            </div>
+        </div>
         </header>
     </body>
+    <script>
+        
+        //Дата на сайте
+        var d = new Date();
+        var day = new Array('Понедельник', 'Вторник', "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье");
+        var month=new Array("января","февраля","марта","апреля","мая","июня","июля","августа",
+"сентября","октября","ноября","декабря");
+        var date_taday = (day[d.getDay()]+", " +d.getDate()+ " " + month[d.getMonth()]+ ", " + d.getFullYear() + " г.");
+        document.getElementById('date_today').innerHTML = date_taday;
+        
+
+
+        //Открывает боковое мею        
+        function open_extra_menu(){
+            document.getElementById('extra_menu').style.display = 'block';
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("menu_content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display ='block') {
+                        openDropdown.style.display = 'none';
+                    }
+                }
+            }
+        }
+
+    //Открытие меню архива 
+    function open_archive_menu(){
+        document.getElementById("archive_menu").style.display='block';
+    }
+    </script>
 </html> 
