@@ -126,6 +126,11 @@ input{
     cursor: pointer;
 }
 
+.content{
+    display: flex;
+    flex-flow: column;
+}
+
 .one-part{
     display: flex;
     justify-content: space-between;
@@ -134,15 +139,134 @@ input{
     margin-top: 20px;
 }
 
-.slider-content{
-    border: 1px solid black;
+.slider{
+    width:900px;
+    height:300px;
+    overflow: hidden;
+}
+
+
+.img-slider{
     width:900px;
     height:300px;
 }
 
+.slider-content{
+    overflow: hidden;
+    position: absolute;
+    transition: opacity 1s;
+}     
+
+.slider-content:first-child{
+    opacity: 1;
+}   
+
+
+.info-slider{
+    background: black;
+    position: absolute;
+    height:300px;
+    width: 280px;
+    opacity: 0.6;
+}
+
+.title-slider{
+    color: white;
+    font-family:"LetoSans-Thin";
+    font-size: 20pt;
+    text-align: center;
+}
+
+.more-slider{
+text-align: center;
+    width: 270px;
+    color: white;
+    font-family:"LetoSans-Thin";
+    font-size: 12pt;
+    
+}
+
+.more-detalies{
+    color: white;
+    font-family:"LetoSans-Thin";
+    font-size: 12pt;
+    position: absolute;
+    right: 30px;
+    top:250px;
+}
+
+
 .qr{
     width:300px;
     height:300px;
+}
+
+.news-block{
+    margin-top: 30px;
+}
+
+.news-title{
+    font-family:"Myriad-Pro-reg";
+    font-size: 25pt;
+    text-align: center;
+}
+
+.news-content{
+    display: flex;
+}
+
+.news{
+    display: flex;
+    flex-flow: column;  
+    width: 830px;
+    margin-top: 30px;
+}
+
+.news-1{
+    display: flex;
+}
+.article{
+    margin-right: 30px;
+}
+
+.article-img{
+    width:400px;
+    height:200px;
+}
+.section{
+    font-family: "LetoSans-Thin";
+    color: red;
+    font-size: 14px;
+}
+.article-title{
+    font-family: "Myriad-Pro-reg";
+    color: black;
+    font-size: 15pt;
+}
+.article-more{
+    margin-left:280px;
+    font-family: "Myriad-Pro-reg";
+    font-size: 12pt;
+}
+
+.units{
+    width: 400px;
+    margin-left:70px;
+}
+
+.units-title{
+    font-family: "Myriad-Pro-reg";
+    font-size: 20pt;
+    text-align: center;
+}
+
+.unit{
+    border-top: 5px solid #F4F3F3;
+}
+
+.unit-title{
+    font-family: "Myriad-Pro-reg";
+    font-size: 16pt;
 }
 
 
