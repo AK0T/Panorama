@@ -54,10 +54,80 @@
         </header>
         <div class="content">
             <div class="one-part">
-                <div class="slider-content">
-                    
+                <div class="slider">
+                    <div class="slider-content">
+                        <div class="info-slider">
+                            <p class="title-slider">ПАЗы для СВО</p>
+                            <p class="more-slider">Автобусы ПАЗ поставлены на железнодорожные 
+                                платформы и вскоре в составе грузового поезда отправятся бойцам 
+                                со станции «Красноярск»</p>
+                                <a href="" class="more-detalies"><p>Подробнее</p></a>
+                        </div>
+                        <img src="img/bus.jpg" alt="" class="img-slider">
+                    </div>
+                    <div class="slider-content">
+                        <div class="info-slider">
+                            <p class="title-slider">Да будет свет</p>
+                            <p class="more-slider">На стеле «Зеленогорск» включена динамическая подсветка. 
+                                Вскоре засияет яркими огнями и улица Индустриальная.</p>
+                                <a href="" class="more-detalies"><p>Подробнее</p></a>
+                        </div>
+                        <div class="img-slider">
+                            <img src="img/stele.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
                 <a  href="https://vk.com/gazeta.panorama"><img src="img/QR.png" class="qr"></a>
+            </div>
+            <div class="news-block">
+                <p class="news-title">Новости</p>
+                <div class="news-content">
+                    <div class="news">
+                        <div class="news-1">
+                            <div class="article">
+                                <img src="img/bus.jpg" alt="" class="article-img">
+                                <p class="section">культура</p>
+                                <p class="article-title">ПАЗы для СВО</p>
+                                <a href="" ><p class="article-more">Подробнее</p></a>
+                            </div>
+                            <div class="article">
+                                <img src="img/bus.jpg" alt="" class="article-img">
+                                <p class="section">культура</p>
+                                <p class="article-title">ПАЗы для СВО</p>
+                                <a href="" ><p class="article-more">Подробнее</p></a>
+                            </div>
+                        </div>
+                        <div class="news-1">
+                            <div class="article">
+                                <img src="img/bus.jpg" alt="" class="article-img">
+                                <p class="section">культура</p>
+                                <p class="article-title">ПАЗы для СВО</p>
+                                <a href="" ><p class="article-more">Подробнее</p></a>
+                            </div>
+                            <div class="article">
+                                <img src="img/bus.jpg" alt="" class="article-img">
+                                <p class="section">культура</p>
+                                <p class="article-title">ПАЗы для СВО</p>
+                                <a href="" ><p class="article-more">Подробнее</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="units">
+                        <p class="units-title">Новости в разделах</p>
+                        <div class="unit">
+                            <p class="unit-title">Экономика:</p>
+                        </div>
+                        <div class="unit">
+                            <p class="unit-title">Культура:</p>
+                        </div>
+                        <div class="unit">
+                            <p class="unit-title">Происшествия:</p>
+                        </div>
+                        <div class="unit">
+                            <p class="unit-title">Общество:</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <footer>
@@ -124,6 +194,17 @@
     }
 
     //слайдер
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slider-content');
+    const slideInterval = 5000;
+    
+    function changeSlide() {
+        slides[currentIndex].style.opacity = 0;
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].style.opacity = 1;
+    }
+    
+    setInterval(changeSlide, slideInterval);
 
     </script>
 </html> 
