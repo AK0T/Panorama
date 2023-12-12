@@ -6,6 +6,10 @@
     font-family:Myriad-Pro-reg;
     src: url(fonts/MYRIADPRO-REGULAR.OTF);
 }
+@font-face {
+    font-family:Myriad-Pro-light;
+    src: url(fonts/MyriadPro-Light.otf);
+}
 
 body{
     margin-left: 300px;
@@ -142,6 +146,51 @@ input{
 }
 
 
+.footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px solid black;
+    padding-top: 30px;
+    border-bottom: 3px solid #AEABAB;
+    padding-bottom: 30px;
+}
 
+.footer_item{
+    border-right: 3px solid #AEABAB;
+    width: 300px;
+    height: 200px;
+}
+
+.newspaper_item{
+    font-family:"Myriad-Pro-light";
+    font-size: 15pt;
+}
+
+.heading_item{
+    font-family:"Myriad-Pro-light";
+    font-size: 15pt;
+}
+
+h2{
+    font-family: 'Myriad-Pro-reg';
+}
+
+.advertising_item{
+    font-family:"Myriad-Pro-light";
+    font-size: 15pt;
+}
+
+.contacts_item{
+    font-family:"Myriad-Pro-light";
+    font-size: 15pt;
+}
+
+.note{
+    margin-top: 10px;
+    font-family:"Myriad-Pro-light";
+    font-size: 15pt;
+    text-align: center;
+}
 
 
