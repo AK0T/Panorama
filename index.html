@@ -8,7 +8,7 @@
             <div class="logo_and_info">  
                 <div class="date">
                     <p id="date_today">Вторник, 07 декабря, 2023</p>
-                    <p>Зеленогорск, красноярский край</p>
+                    <p>Зеленогорск, Красноярский край</p>
                 </div>          
                 <img src="img/logo.png" alt="" class="logo">
             </div>
@@ -77,7 +77,7 @@
                         </div>
                     </div>
                 </div>
-                <a  href="https://vk.com/gazeta.panorama"><img src="img/QR.png" class="qr"></a>
+                <a  href="https://vk.com/gazeta.panorama" target="_blank"><img src="img/QR.png" class="qr"></a>
             </div>
             <div class="news-block">
                 <p class="news-title">Новости</p>
@@ -129,6 +129,25 @@
                     </div>
                 </div>
             </div>
+            <div class="top">
+                <p class="top-title">Топ новостей</p>
+                <div class="top-1">
+                    <div class="oneplace">1</div>
+                    <div class="oneplace">1</div>
+                </div>
+                <div class="top-2">
+                    <div class="twoplace">1</div>
+                    <div class="twoplace">1</div>
+                    <div class="twoplace">1</div>
+                    <div class="twoplace">1</div>
+                    <div class="twoplace">1</div>
+                </div>
+            </div>
+            <div class="networks">
+                <p class="networks-title">Зеленогорск в соцсетях</p>
+                <a href="https://vk.com/gazeta.panorama" target="_blank"><img src="img/free-icon-vk-2111828.png" class="networks-icon"></a>
+                <a href="https://vk.com/gazeta.panorama" target="_blank"><p class="network-name">Вконтакте</p></a>
+            </div>
         </div>
         <footer>
             <div class="footer">
@@ -166,7 +185,7 @@
         var day = new Array('Понедельник', 'Вторник', "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье");
         var month=new Array("января","февраля","марта","апреля","мая","июня","июля","августа",
 "сентября","октября","ноября","декабря");
-        var date_taday = (day[d.getDay()]+", " +d.getDate()+ " " + month[d.getMonth()]+ ", " + d.getFullYear() + " г.");
+        var date_taday = (day[d.getDay()-1]+", " +d.getDate()+ " " + month[d.getMonth()]+ ", " + d.getFullYear() + " г.");
         document.getElementById('date_today').innerHTML = date_taday;
         
 
@@ -187,11 +206,6 @@
                 }
             }
         }
-
-    //Открытие меню архива 
-    function open_archive_menu(){
-        document.getElementById("archive_menu").style.display='block';
-    }
 
     //слайдер
     let currentIndex = 0;
