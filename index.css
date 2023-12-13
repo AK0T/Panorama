@@ -136,7 +136,7 @@ input{
     justify-content: space-between;
     margin-right: 15px;
     margin-left: 15px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .slider{
@@ -202,7 +202,9 @@ text-align: center;
 }
 
 .news-block{
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .news-title{
@@ -224,6 +226,7 @@ text-align: center;
 
 .news-1{
     display: flex;
+    margin-bottom: 25px;
 }
 .article{
     margin-right: 30px;
@@ -269,6 +272,64 @@ text-align: center;
     font-size: 16pt;
 }
 
+.top{
+    margin: 10px;
+}
+
+.top-title{
+    font-family:"Myriad-Pro-reg";
+    font-size: 25pt;
+    text-align: center;
+    margin-bottom:50px;
+}
+
+.top-1{
+display: flex;
+justify-content: center;
+}
+
+.oneplace{
+    background: grey;
+    width: 550px;
+    height: 250px;
+    margin-right:30px;
+}
+
+.top-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+    
+.twoplace{
+    background: grey;
+    width: 300px;
+    height: 200px;
+    margin-right:30px;
+}
+
+.networks{
+    margin-top: 30px;
+}
+
+.networks-title{
+    font-family:"Myriad-Pro-reg";
+    font-size: 25pt;
+    text-align: center;
+    margin-bottom: -1px;
+}
+
+.networks-icon{
+    width:150px;
+    height:150px;
+    margin-left: 565px;
+}
+
+.network-name{
+    text-align: center;
+    margin-top: -10px;
+    font-family:"Myriad-Pro-reg";
+}
 
 .footer{
     margin-top: 30px;
